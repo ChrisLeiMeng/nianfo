@@ -122,3 +122,20 @@ backBtn.addEventListener('click', () => {
 if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
 }
+
+// 檢查新版本：每次發佈會更新 version.json，和開啟時讀到的不同就顯示提示
+let loadedVersion = null;
+async function checkUpdate() {
+  try {
+    const res = await fetch('version.json', { cache: 'no-store' });
+    const { version } = await res.json();
+    if (!loadedVersion) loadedVersion = version;
+    else if (version !== loadedVersion) document.getElementById('update').hidden = false;
+  } catch { /* 沒網路時略過 */ }
+}
+document.getElementById('update').addEventListener('click', () => location.reload());
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') checkUpdate();
+});
+setInterval(checkUpdate, 30 * 60 * 1000);
+checkUpdate();

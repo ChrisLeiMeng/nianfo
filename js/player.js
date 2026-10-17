@@ -56,9 +56,13 @@ export function renderPlayView(view, item, cfg) {
         </label>
       </div>
       <div class="stat">本次已播放 <b data-done>0</b> 次<span data-remain></span><span data-reps></span></div>
+      <button type="button" class="btn btn-block" data-dark>🌙 黑畫面（省電，聲音照常播放）</button>
     </section>
     <section class="display"></section>
-    <a class="btn btn-block" href="#/dedication">迴向</a>`;
+    <a class="btn btn-block" href="#/dedication">迴向</a>
+    <div class="dark-screen" hidden>
+      <div class="dark-info"><p data-dark-stat></p><small>連點兩下回到畫面</small></div>
+    </div>`;
 
   renderDisplay(view.querySelector('.display'), item, category);
 
@@ -70,6 +74,7 @@ export function renderPlayView(view, item, cfg) {
 
   if (!sources.length) {
     view.querySelector('.yt-wrap').hidden = true;
+    view.querySelector('[data-dark]').hidden = true;
     msg.hidden = false;
     msg.innerHTML = `此項目尚未設定音源，請在 <code>config/sources.json</code> 的
       <code>"${esc(item.id)}"</code> 加入 YouTube 影片 ID。<br>
@@ -90,7 +95,31 @@ export function renderPlayView(view, item, cfg) {
     remainEl.textContent = loop && !finished ? `／共 ${loop} 次` : '';
     repsEl.textContent = total !== done ? `（合計 ${fmtNum(total)} 遍）` : '';
     playBtn.textContent = playing ? '❚❚ 暫停' : (finished ? '↻ 再播一次' : '▶ 播放');
+    darkStat.textContent = `${playing ? '播放中' : (finished ? '已圓滿' : '已暫停')}・第 ${fmtNum(done)} 次`;
   }
+
+  // 黑畫面：螢幕保持開著但全黑（OLED 幾乎不耗電），避免關螢幕後 YouTube 停止播放
+  const dark = view.querySelector('.dark-screen');
+  const darkInfo = view.querySelector('.dark-info');
+  const darkStat = view.querySelector('[data-dark-stat]');
+  let lastTap = 0;
+  let driftTimer = null;
+  function drift() { // 文字定時換位置，避免烙印
+    darkInfo.style.top = 10 + Math.random() * 70 + '%';
+    darkInfo.style.left = 5 + Math.random() * 40 + '%';
+  }
+  function setDark(on) {
+    dark.hidden = !on;
+    clearInterval(driftTimer);
+    if (on) { drift(); driftTimer = setInterval(drift, 30000); keepAwake(true); }
+    else if (!playing) keepAwake(false);
+  }
+  view.querySelector('[data-dark]').addEventListener('click', () => setDark(true));
+  dark.addEventListener('click', () => {
+    const now = Date.now();
+    if (now - lastTap < 500) setDark(false);
+    lastTap = now;
+  });
 
   function showError(code) {
     const s = sources[srcIndex];
@@ -182,6 +211,7 @@ export function renderPlayView(view, item, cfg) {
 
   return () => {
     disposed = true;
+    clearInterval(driftTimer);
     keepAwake(false);
     try { player?.destroy(); } catch { /* 忽略 */ }
   };
