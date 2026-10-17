@@ -1,0 +1,34 @@
+{
+  "categories": [
+    { "id": "fohao", "name": "佛號", "textLabel": "顯示佛號" },
+    { "id": "zhou", "name": "咒語", "textLabel": "顯示咒語" },
+    { "id": "jing", "name": "經文", "textLabel": "顯示經文" }
+  ],
+  "items": [
+    { "id": "amituofo-4", "category": "fohao", "name": "阿彌陀佛聖號(四字四音)", "chant": "阿彌陀佛", "text": null, "image": "amituofo.jpg" },
+    { "id": "namo-amituofo-6", "category": "fohao", "name": "南無阿彌陀佛聖號(六字二音)", "chant": "南無阿彌陀佛", "text": null, "image": "amituofo.jpg" },
+    { "id": "guanyin-7", "category": "fohao", "name": "南無觀世音菩薩聖號(七字二音)", "chant": "南無觀世音菩薩", "text": null, "image": "guanyin.jpg" },
+    { "id": "dizang-7", "category": "fohao", "name": "南無地藏王菩薩聖號(七字二音)", "chant": "南無地藏王菩薩", "text": null, "image": "dizang.jpg" },
+
+    { "id": "dabei", "category": "zhou", "name": "大悲咒", "text": "大悲咒.txt", "image": "qianshou-guanyin.jpg" },
+    { "id": "shi-xiaozhou", "category": "zhou", "group": "十小咒", "name": "十小咒(合誦)", "text": "十小咒.txt", "image": "shijia-fo.jpg" },
+    { "id": "ruyi-baolun", "category": "zhou", "group": "十小咒", "name": "如意寶輪王陀羅尼", "text": "如意寶輪王陀羅尼.txt", "image": "ruyilun-guanyin.jpg" },
+    { "id": "xiaozai-jixiang", "category": "zhou", "group": "十小咒", "name": "消災吉祥神咒", "text": "消災吉祥神咒.txt", "image": "chishengguang-fo.jpg" },
+    { "id": "gongde-baoshan", "category": "zhou", "group": "十小咒", "name": "功德寶山神咒", "text": "功德寶山神咒.txt", "image": "shijia-fo.jpg" },
+    { "id": "zhunti", "category": "zhou", "group": "十小咒", "name": "準提神咒", "text": "準提神咒.txt", "image": "zhunti-pusa.jpg" },
+    { "id": "wuliangshou", "category": "zhou", "group": "十小咒", "name": "聖無量壽決定光明王陀羅尼", "text": "聖無量壽決定光明王陀羅尼.txt", "image": "amituofo.jpg" },
+    { "id": "yaoshi-guanding", "category": "zhou", "group": "十小咒", "name": "藥師灌頂真言", "text": "藥師灌頂真言.txt", "image": "yaoshi-fo.jpg" },
+    { "id": "guanyin-linggan", "category": "zhou", "group": "十小咒", "name": "觀音靈感真言", "text": "觀音靈感真言.txt", "image": "guanyin.jpg" },
+    { "id": "qifo-miezui", "category": "zhou", "group": "十小咒", "name": "七佛滅罪真言", "text": "七佛滅罪真言.txt", "image": "qifo.jpg" },
+    { "id": "wangsheng", "category": "zhou", "group": "十小咒", "name": "往生淨土神咒", "text": "往生淨土神咒.txt", "image": "amituofo.jpg" },
+    { "id": "shan-tiannv", "category": "zhou", "group": "十小咒", "name": "善天女咒", "text": "善天女咒.txt", "image": "jixiang-tiannv.jpg" },
+    { "id": "guanyin-xinzhou", "category": "zhou", "name": "觀世音心咒", "text": "觀世音心咒.txt", "image": "guanyin.jpg" },
+
+    { "id": "xinjing-sing", "category": "jing", "name": "般若波羅蜜多心經(唱頌)", "text": "心經.txt", "image": "guanyin.jpg" },
+    { "id": "xinjing-read", "category": "jing", "name": "般若波羅蜜多心經(念頌)", "text": "心經.txt", "image": "guanyin.jpg" },
+    { "id": "pumen", "category": "jing", "name": "觀世音菩薩普門品(念頌)", "text": "普門品.txt", "image": "guanyin.jpg" },
+    { "id": "dizang-jing", "category": "jing", "name": "地藏菩薩本願經(唱頌)", "text": "地藏經.txt", "image": "dizang.jpg" },
+    { "id": "amituo-jing-ritual", "category": "jing", "name": "阿彌陀經(儀軌版本)", "text": "阿彌陀經.txt", "image": "amituofo.jpg" },
+    { "id": "amituo-jing-sing", "category": "jing", "name": "阿彌陀經(唱頌)", "text": "阿彌陀經.txt", "image": "amituofo.jpg" }
+  ]
+}

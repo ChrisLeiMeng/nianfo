@@ -1,0 +1,26 @@
+圖片皆取自 Wikimedia Commons（博物館館藏，公眾領域或 CC 授權），部分經裁切。
+
+amituofo.jpg          南宋 佚名〈阿彌陀如來圖〉軸，大都會藝術博物館（CC0）
+                      https://commons.wikimedia.org/wiki/File:南宋_佚名_阿彌陀如來圖_軸-Buddha_Amitabha_descending_from_his_Pure_Land_MET_DP222079.jpg
+guanyin.jpg           觀音菩薩木雕，巴黎賽努奇博物館 M.C. 9944（CC0）
+                      https://commons.wikimedia.org/wiki/File:Bodhisattva_Avalokiteśvara_(Guanyin_觀音),_M.C._9944.jpg
+qianshou-guanyin.jpg  千手觀音唐卡，大都會藝術博物館 1989.18（公眾領域）
+                      https://commons.wikimedia.org/wiki/File:Anonymous_-_Thousand-Armed_Chenresi,_a_Cosmic_Form_of_the_Bodhisattva_Avalokiteshvara_-_1989.18_-_Metropolitan_Museum_of_Art.jpg
+dizang.jpg            地藏菩薩，大都會藝術博物館（公眾領域）
+                      https://commons.wikimedia.org/wiki/File:Ksitigarbha_(Metropolitan_Museum_of_Art).jpg
+ruyilun-guanyin.jpg   如意輪觀音像，日本鎌倉時代（CC BY 4.0）
+                      https://commons.wikimedia.org/wiki/File:Bodhisattva_Cintāmaṇicakra,_Kamakura_period,_Japan.jpg
+chishengguang-fo.jpg  熾盛光佛與五星圖（公眾領域）
+                      https://commons.wikimedia.org/wiki/File:Tejaprabhā_Buddha_and_the_Five_Planets_by_Chang_Huai-hsing_(cropped).jpg
+shijia-fo.jpg         釋迦牟尼佛唐卡（公眾領域）
+                      https://commons.wikimedia.org/wiki/File:Shakyamuni_Buddha_-_Google_Art_Project.jpg
+zhunti-pusa.jpg       宋人畫準提像 軸，國立故宮博物院（公眾領域）
+                      https://commons.wikimedia.org/wiki/File:宋人畫準提像_軸.jpg
+yaoshi-fo.jpg         元代〈藥師佛佛會圖〉壁畫，大都會藝術博物館（公眾領域）
+                      https://commons.wikimedia.org/wiki/File:Buddha_of_Medicine_Bhaishajyaguru_(Yaoshi_fo)_-_Google_Art_Project.jpg
+qifo.jpg              唐代過去七佛鎏金銅像（CC0）
+                      https://commons.wikimedia.org/wiki/File:Seven_Buddhas_of_the_Past,_Tang,_c._700_AD.jpg
+jixiang-tiannv.jpg    吉祥天女像（公眾領域）
+                      https://commons.wikimedia.org/wiki/File:Kichijōten.jpg
+
+想換圖：用同樣檔名覆蓋即可；或在 config/items.json 修改各項目的 "image" 檔名。

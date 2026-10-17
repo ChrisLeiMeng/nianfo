@@ -1,0 +1,56 @@
+{
+  "amituofo-4": [
+    { "label": "音源一", "youtube": "7IQ_16vxzQc" },
+    { "label": "音源二", "youtube": "MwlZmzqWPFI" }
+  ],
+  "namo-amituofo-6": [
+    { "label": "音源一", "youtube": "5dSuqjoL_qk" }
+  ],
+  "guanyin-7": [
+    { "label": "音源一", "youtube": "tWezZtijV2A" }
+  ],
+  "dizang-7": [
+    { "label": "音源一", "youtube": "2t-jYVf_v28" }
+  ],
+
+  "dabei": [
+    { "label": "念誦版（每次播放 20 遍）", "youtube": "5aFLymRoahs", "reps": 20 },
+    { "label": "拼音版（每次播放 108 遍）", "youtube": "0FvaWspRIyQ", "reps": 108 }
+  ],
+  "shi-xiaozhou": [
+    { "label": "萬佛聖城唱誦", "youtube": "M9-5t8wK4rY" },
+    { "label": "佛光山梵唄（大悲咒＋十小咒）", "youtube": "KSnlKQmh3rs" }
+  ],
+  "ruyi-baolun": [],
+  "xiaozai-jixiang": [],
+  "gongde-baoshan": [],
+  "zhunti": [],
+  "wuliangshou": [],
+  "yaoshi-guanding": [],
+  "guanyin-linggan": [],
+  "qifo-miezui": [],
+  "wangsheng": [],
+  "shan-tiannv": [],
+  "guanyin-xinzhou": [
+    { "label": "音源一", "youtube": "HzHbnBSZJ2s" }
+  ],
+
+  "xinjing-sing": [
+    { "label": "音源一", "youtube": "4zB2jBVe6jg" }
+  ],
+  "xinjing-read": [
+    { "label": "音源一", "youtube": "5YQBjX8O1Qo" }
+  ],
+  "pumen": [
+    { "label": "音源一", "youtube": "3UyZFJXQ5Is" }
+  ],
+  "dizang-jing": [
+    { "label": "音源一", "youtube": "zdmylee5bP8" }
+  ],
+  "amituo-jing-ritual": [
+    { "label": "音源一", "youtube": "iGKbccVrWnA" }
+  ],
+  "amituo-jing-sing": [
+    { "label": "音源一", "youtube": "HAYg2ZKs2mY" }
+  ]
+}
